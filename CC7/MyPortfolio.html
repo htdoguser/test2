@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* General reset and improvements */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+
+        header {
+            background: url('ako1.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 50px;
+        }
+
+        .section {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        .section:hover {
+            background-color: #444;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            font-size: 2.8em;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        /* Profile section styles */
+        .about img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .about p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .skills ul, .projects ul, .hobbies ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .skills li, .projects li, .hobbies li {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex: 1 1 calc(33.33% - 20px);
+            color: #fff;
+            text-align: center;
+        }
+
+        .skills li:hover, .projects li:hover, .hobbies li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .projects img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .projects li {
+            background-color: #222;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.8em;
+            }
+
+            .skills li, .projects li, .hobbies li {
+                flex: 1 1 calc(50% - 20px);
+            }
+
+            .about img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .skills li, .projects li, .hobbies li {
+                flex: 1 1 100%;
+            }
+
+            .about img {
+                width: 130px;
+                height: 130px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+
+    <h1>Regalario Joseph</h1>
+    <p>Bachelor of Information Technology, Major in Network Security Track</p>
+</header>
+
+<div class="container">
+    <section class="about section">
+	<center>
+        <img src="pfp.jpg" alt="Profile Picture">
+		</center>
+        <h2>About Me</h2>
+        <p>"Hello! I'm Regalario Joseph, a passionate first-year BSIT student at the University of the Cordilleras, with a keen interest in cybersecurity. I'm dedicated to expanding my knowledge in IT, honing my skills, and exploring how technology can shape the future. When I'm not immersed in coding, I enjoy outdoor activities, and in my free time, I love reading manga, playing arnis, and video games."</p>
+    </section>
+
+    <section class="hobbies section">
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li>Outdoor activities</li>
+            <li>Reading manga</li>
+            <li>Arnis (Filipino martial art)</li>
+            <li>Playing video games</li>
+            <li>Survival training</li>
+            <li>Ham Radio</li>
+        </ul>
+    </section>
+	
+
+    <section class="projects section">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <img src="artmetic3.png" alt="Project 1">
+                <div>
+                    <strong>Arithmetic Calculator</strong>
+                    <p>Arithmetic Calculator in Excel.</p>
+                </div>
+            </li>
+            <li>
+                <img src="bitwise2.png" alt="Project 2">
+                <div>
+                    <strong>Bitwise Calculator</strong>
+                    <p>Bitwise Calculator using Excel.</p>
+                </div>
+            </li>
+            <li>
+                <img src="radix.png" alt="Project 3">
+                <div>
+                    <strong>Radix Converter</strong>
+                    <p>Radix Converter using Java.</p>
+                </div>
+            </li>
+            <li>
+                <img src="decimal.png" alt="Project 4">
+                <div>
+                    <strong>Decimal and Binary Converter</strong>
+                    <p>Java application for Decimal and Binary conversion.</p>
+                </div>
+            </li>
+            <li>
+                <img src="pussy.jpg" alt="Project 5">
+                <div>
+                    <strong>Draw the Image</strong>
+                    <p>Coloring the cat using a coloring sheet.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+	
+</div>
+
+<footer>
+    <p>Created by <a href="https://www.facebook.com/lokoroko0909">Regalario Joseph</a></p>
+</footer
